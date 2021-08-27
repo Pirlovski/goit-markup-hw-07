@@ -1,0 +1,31 @@
+.header {
+    border-bottom: 1px solid $header-color;
+  }
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    .header-section &{
+        display: flex;
+  align-items: center;
+
+  flex-wrap: wrap
+    }
+  }
+  .nav--current {
+    position: relative;
+    color: $accent-color;
+  }
+
+  .nav--current::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -1px;
+    display: block;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
