@@ -15,8 +15,9 @@
       }
 
       &__list {
-        display: flex;
-        justify-content: space-between;
+
+        @include centeredFlex($type-justify:space-between , $type-aling:none);
+
       }
   }
 

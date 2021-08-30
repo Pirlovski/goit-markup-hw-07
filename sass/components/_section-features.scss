@@ -7,8 +7,9 @@
     padding: 94px 0;
 
     &__list {
-        display: flex;
-        justify-content: space-between;
+    
+        @include centeredFlex($type-aling:none ,$type-justify:space-between)
+
       }
 
       &__item{

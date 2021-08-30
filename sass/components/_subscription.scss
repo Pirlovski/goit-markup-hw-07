@@ -14,8 +14,9 @@
 
 
   &__nav{
-    display: flex;
-    align-items: baseline;
+   
+    @include centeredFlex($type-justify:none , $type-aling:baseline)
+
   }
     }
 

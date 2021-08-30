@@ -1,7 +1,9 @@
 @import'./utils/variables' ;
 @import'./base/normalize' ;
 @import'./components/header' ;
-@import'./utils/zeroing' ;
+@import'./base/global-styles' ;
+@import'./utils/placeholder';
+@import './utils/mixins';
 @import'./components/logo' ;
 @import'./components/nav' ;
 @import'./components/contact' ;
@@ -9,7 +11,7 @@
 @import'./components/section-features';
 @import'./components/work' ;
 @import'./components/team' ;
-@import'./components/another-icon' ;
+@import'./components/social-list' ;
 @import'./components/clients';
 @import'./components/footer' ;
 @import'./components/join' ;

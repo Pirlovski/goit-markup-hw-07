@@ -289,7 +289,6 @@ summary {
   left: 0;
   bottom: -1px;
   display: block;
-  background-color: #2196f3;
   border-radius: 2px;
 }
 
@@ -328,6 +327,29 @@ img {
   display: none;
 }
 
+.nav--current::after, .primary-button, .social-list__link--fill:hover, .social-list__link--fill:focus, .social-list__link--background-color:hover, .social-list__link--background-color:focus, .form__checkbox-input:checked + .form__checkbox-icon, .portfolio__button:hover, .portfolio__button:focus {
+  background-color: #2196f3;
+}
+
+.contact__link:hover .contact__icon,
+.contact__link:focus .contact__icon, .clients__paragraph:hover .clients__item,
+.clients__paragraph:focus .clients__item, .clients__item:hover, .clients__item:focus, .form__input-group-absolute:focus-within > .form__svg,
+.form__input-group-absolute:hover > .form__svg, .close-svg:hover, .close-svg:focus {
+  fill: #2196f3;
+}
+
+.social-list__icon:hover, .social-list__icon:focus, .social-list__link--fill:hover, .social-list__link--fill:focus, .social-list__link--fill:hover .social-list__icon,
+.social-list__link--fill:focus .social-list__icon, .social-list__link--background-color .social-list__icon {
+  fill: #ffffff;
+}
+
+.contact__link:hover .contact__icon,
+.contact__link:focus .contact__icon, .clients__paragraph:hover .clients__item,
+.clients__paragraph:focus .clients__item, .clients__item:hover, .clients__item:focus, .form__input-group-absolute:focus-within > .form__svg,
+.form__input-group-absolute:hover > .form__svg, .close-svg:hover, .close-svg:focus {
+  fill: #2196f3;
+}
+
 .logo {
   color: #212121;
   font-weight: bold;
@@ -344,6 +366,10 @@ img {
 
 .blue-text:active {
   color: var(--blue-color);
+}
+
+.logo--blue-text {
+  color: #2196f3;
 }
 
 .nav {
@@ -395,13 +421,16 @@ img {
   margin-left: auto;
 }
 
-.contact__contact__link {
+.contact__link--flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
 }
 
 .contact__item:not(:first-child) {
@@ -410,17 +439,6 @@ img {
 
 .contact__item {
   margin-left: auto;
-}
-
-.contact__contact__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .contact__link {
@@ -432,11 +450,6 @@ img {
 
 .contact__link:hover, .contact__link:focus {
   color: #2196f3;
-}
-
-.contact__link:hover .contact__icon,
-.contact__link:focus .contact__icon {
-  fill: #2196f3;
 }
 
 .contact__icon {
@@ -471,7 +484,6 @@ img {
 
 .primary-button {
   color: #ffffff;
-  background-color: #2196f3;
   font-size: 16px;
   line-height: 1.87;
   cursor: pointer;
@@ -501,6 +513,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -554,6 +569,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -571,15 +589,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  width: 100%;
-  color: #ffffff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  width: 100%;
+  color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
   bottom: 0;
   left: 0;
@@ -607,6 +625,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -632,7 +653,7 @@ img {
   color: #757575;
 }
 
-.another-list {
+.social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,41 +663,48 @@ img {
   padding: 16px 32px 0 32px;
 }
 
-.another__icon:not(:last-child) {
+.social-list__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.another__icon-object:hover,
-.another__icon-object:focus {
-  fill: #ffffff;
-}
-
-.another__network-link {
+.social-list__link--fill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
   fill: #afb1b8;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.another__network-link:hover, .another__network-link:focus {
-  background-color: #2196f3;
-  fill: #ffffff;
+.social-list__link--background-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.another__network-link:hover .another__icon-object,
-.another__network-link:focus .another__icon-object {
-  fill: #ffffff;
+.social-list--center {
+  padding: 0;
 }
 
 .clients {
@@ -703,7 +731,7 @@ img {
           justify-content: space-between;
 }
 
-.client__item {
+.clients__item {
   display: block;
   fill: #afb1b8;
   padding: 12px 36px;
@@ -713,13 +741,7 @@ img {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client__paragraph:hover .client__item,
-.client__paragraph:focus .client__item {
-  fill: #2196f3;
-}
-
-.client__item:hover, .client__item:focus {
-  fill: #2196f3;
+.clients__item:hover, .clients__item:focus {
   border: 1px solid #2196f3;
 }
 
@@ -742,32 +764,12 @@ img {
   color: #2196f3;
 }
 
-.container-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.address-link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-}
-
 .footer__item {
   margin-bottom: 20px;
 }
 
 .footer__item:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.logo--blue-text {
-  color: #2196f3;
 }
 
 .footer__maps {
@@ -782,6 +784,18 @@ img {
 
 .footer--white-text {
   color: #ffffff;
+}
+
+.address-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.container-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .join {
@@ -810,36 +824,6 @@ img {
        tab-size: 0;
 }
 
-.join__item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.join__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.join__link:hover, .join__link:focus {
-  background-color: #2196f3;
-}
-
-.join__object {
-  fill: #ffffff;
-}
-
 .subscription {
   margin: 12px 0 0 93px;
 }
@@ -857,6 +841,9 @@ img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
 }
 
 .subscription__input {
@@ -940,26 +927,25 @@ img {
   text-align: center;
 }
 
-.form-field {
+.form__field {
   position: relative;
   margin-bottom: 10px;
 }
 
-.form-field__comment {
-  position: relative;
+.form__field--comment {
   margin-bottom: 20px;
 }
 
-.form-field__checkbox {
+.form__field--checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -969,17 +955,12 @@ img {
   margin-bottom: 4px;
 }
 
-.input-group-absolute {
+.form__input-group-absolute {
   position: relative;
 }
 
-.input-group-absolute:focus-within > .form__svg,
-.input-group-absolute:hover > .form__svg {
-  fill: #2196f3;
-}
-
-.input-group-absolute:focus-within > .form__input,
-.input-group-absolute:hover > .form__input {
+.form__input-group-absolute:focus-within > .form__input,
+.form__input-group-absolute:hover > .form__input {
   border-color: #2196f3;
 }
 
@@ -1020,57 +1001,59 @@ img {
   border-color: #2196f3;
 }
 
-.mailing-label {
+.form__checkbox-label {
   display: block;
   color: #757575;
 }
 
-.mailing-label-link {
+.form__checkbox .form__checkbox-label--underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--accent-color);
 }
 
-.checkbox {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+.form__checkbox-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
 }
 
-.form-checkbox-icon {
+.form__checkbox-icon-object {
   color: #0000ff;
 }
 
-.form-checkbox {
+.form__checkbox-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.form__checkbox {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.form-checkbox__primary-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  margin: 0 auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.form__primary-button {
+  text-align: center;
 }
 
-.checkbox:checked + .checkbox-icon {
-  background-color: #2196f3;
+.primary-button--shadow {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.form__checkbox-input:checked + .form__checkbox-icon {
   border-color: #2196f3;
 }
 
-.checkbox-icon {
+.form__checkbox-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1108,14 +1091,6 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-svg:hover, .close-svg:focus {
-  fill: #2196f3;
-}
-
-.form-mailing {
-  position: relative;
-}
-
 .portfolio-section {
   padding: 94px 0;
 }
@@ -1134,7 +1109,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   -webkit-transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1166,7 +1146,6 @@ img {
 
 .portfolio__button:hover, .portfolio__button:focus {
   color: #ffffff;
-  background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
