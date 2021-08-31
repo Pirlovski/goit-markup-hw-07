@@ -1,38 +1,35 @@
 .work {
-    margin-bottom: 94px;
+  margin-bottom: 94px;
 
-    &__title{
-        color: $title-text-color;
-        text-align: center;
-        font-size: 36px;
-        line-height: 1.16;
-        margin-bottom: 50px;
-    }
-
-    & &__list {
-   
-
-        @include centeredFlex($type-justify:space-between , $type-aling:none);
-
-    }
+  &__title {
+    color: $title-text-color;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
   }
 
-  .work__item{
-    position: relative;
+  & &__list {
+    @include centeredFlex($type-justify: space-between, $type-aling: none);
   }
-  .work__link{
-    cursor: pointer;
-  }
+}
 
-  .work__label {
-    @include centeredFlex();
+.work__item {
+  position: relative;
+}
+.work__link {
+  cursor: pointer;
+}
 
-    position: absolute;
-    width: 100%;
-    color: $white-color;
-   
-    background: rgba(47, 48, 58, 0.8);
-    bottom: 0;
-    left: 0;
-    padding: 28px 0;
-  }
+.work__label {
+  @include centeredFlex();
+
+  position: absolute;
+  width: 100%;
+  color: $white-color;
+
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  left: 0;
+  padding: 28px 0;
+}

@@ -1,21 +1,14 @@
-.logo{
-    color: $title-text-color ;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
+.logo {
+  color: $title-text-color;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
 
-    &--blue-text {
-        color: $accent-color;
-    }
-    
-}
-.blue-text:active {
-    color: var(--blue-color);
-  }
-
-  .logo--blue-text {
+  &--blue-text {
     color: $accent-color;
   }
+
+}

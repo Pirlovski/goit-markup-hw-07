@@ -2,13 +2,16 @@
   padding: 94px 0;
 
   &__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
     color: $title-text-color;
     text-align: center;
     font-size: 36px;
     line-height: 1.16;
     margin-bottom: 50px;
   }
-
+ 
   &__list {
     @include centeredFlex($type-justify: space-between);
   }
