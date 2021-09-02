@@ -1,7 +1,6 @@
 .social-list {
   display: flex;
   tab-size: 0;
-  padding: 16px 32px 0 32px;
 
   &__item:not(:last-child) {
     margin-right: 10px;
@@ -14,7 +13,7 @@
 }
 
 .social-list__link--fill {
-  @include centeredFlex();
+  @include Flex();
   height: 44px;
   width: 44px;
   border-radius: 50%;
@@ -29,14 +28,14 @@
     @extend %fill-white;
   }
 
-  &:hover .social-list__icon,
-  &:focus .social-list__icon {
+  &:hover &__icon,
+  &:focus &__icon {
     @extend %fill-white;
   }
 }
 
 .social-list__link--background-color {
-  @include centeredFlex();
+  @include Flex();
   height: 44px;
   width: 44px;
   border-radius: 50%;
@@ -53,7 +52,4 @@
   .social-list__icon {
     @extend %fill-white;
   }
-}
-.social-list--center {
-  padding: 0;
 }

@@ -1,5 +1,7 @@
 .work {
   margin-bottom: 94px;
+  background-color: var(--white-color);
+
 
   &__title {
     color: $title-text-color;
@@ -10,7 +12,7 @@
   }
 
   & &__list {
-    @include centeredFlex($type-justify: space-between, $type-aling: none);
+    @include Flex($type-justify: space-between, $type-aling: none);
   }
 }
 
@@ -22,7 +24,7 @@
 }
 
 .work__label {
-  @include centeredFlex();
+  @include Flex();
 
   position: absolute;
   width: 100%;

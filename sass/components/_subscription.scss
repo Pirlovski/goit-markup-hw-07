@@ -8,7 +8,7 @@
   }
 
   &__nav {
-    @include centeredFlex($type-justify: none, $type-aling: baseline);
+    @include Flex($type-justify: none, $type-aling: baseline);
   }
 }
 

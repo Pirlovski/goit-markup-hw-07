@@ -1,13 +1,11 @@
-.features,
-.work {
-  background-color: var(--white-color);
-}
+
 
 .features {
   padding: 94px 0;
+  background-color: var(--white-color);
 
   &__list {
-    @include centeredFlex($type-aling: none, $type-justify: space-between);
+    @include Flex($type-aling: none, $type-justify: space-between);
   }
 
   &__item {

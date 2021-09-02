@@ -55,7 +55,7 @@
   cursor: pointer;
   width: 30px;
   height: 30px;
-  @include centeredFlex();
+  @include Flex();
 
   margin: 8px;
 }

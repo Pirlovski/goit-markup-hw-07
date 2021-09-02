@@ -1,5 +1,5 @@
 .contact {
-  @include centeredFlex();
+  @include Flex();
 
 
   
@@ -11,7 +11,7 @@
   margin-left: auto;
 
   &__link--flex {
-    @include centeredFlex($type-justify: none);
+    @include Flex($type-justify: none);
   }
 
   &__item:not(:first-child) {

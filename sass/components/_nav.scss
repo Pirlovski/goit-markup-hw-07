@@ -36,16 +36,19 @@
 .nav--current {
   position: relative;
   color: $accent-color;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -1px;
+    display: block;
+    @extend %background-accent;
+    border-radius: 2px;
+  }
+
 }
 
-.nav--current::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  left: 0;
-  bottom: -1px;
-  display: block;
-  @extend %background-accent;
-  border-radius: 2px;
-}
+
